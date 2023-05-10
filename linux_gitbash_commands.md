@@ -16,7 +16,7 @@ When changing a permission use the format:
 
 Example below shows the group of `everyone` has the execute (`x`) permission added.
 
-![Permission types](Capture.png)
+![Permission types](Capture.PNG)
 
 _Note: Add `sudo` to grant privileged commands._
 
