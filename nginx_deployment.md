@@ -38,14 +38,14 @@ Connecting to the Virtual Machine through ssh:
 
     vagrant ssh
 
-## Update and upgrade
+## Update and upgrade packages
 
-Update the vagrant packages:
+Update the packages manager:
 
     sudo apt-get update
 
 
-Upgrade the vagrant packages:
+Upgrade the packages manager:
 
     sudo apt-get upgrade -y
 
@@ -99,3 +99,8 @@ Finally, access the web server through a browser with URL:
 
     192.168.10.100
 
+## Stop vagrant
+
+Stop vagrant safely using:
+
+    vagrant halt

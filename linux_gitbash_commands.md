@@ -70,6 +70,52 @@ To reads and output contents of a file use:
 
     cat <file>
 
+Return first lines of a file (default is first 10):
+
+    head <file>
+
+Return last lines of a file (default is first 10):
+
+    tail <file>
+
+Returns file contents line in alphabetical order:
+
+    sort <file>
+
+Return number of lines:
+
+    nl <file>
+
+Return file information (number of lines, bytes, filename):
+
+    wc <file>
+
+Combine commands together using `|` (pipe); for example, to list the first three files:
+
+    ls | head -3
+
+### **Process Management**
+
+Returns all processes that are running and resources (press `q` to exit):
+
+    top
+
+Returns processes being run by the user (takes a snapshot, does not lock the terminal):
+
+    ps aux
+
+Delay calling process of next command:
+
+    <process> <duration> <&: bg operator>
+
+_Note: For example to send a process to the background for 5 seconds, use `sleep 5 &`. Without `&`, process are sent to the foreground._
+
+Stops the specific process using PID; `-9` immediately terminate:
+
+    kill <priority> <PID>
+
+_Note: A priority of `-9` will immediately terminate the process._
+
 ### **Other**
 
 To change the working directory use:
@@ -81,3 +127,5 @@ _Note: Use .. (instead of /folder) to return to the parent directory._
 To print the current working directory use:
 
     pwd
+
+Using `ctrl+z` will stop processes if the terminal is locked.
